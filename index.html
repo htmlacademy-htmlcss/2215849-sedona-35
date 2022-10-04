@@ -9,12 +9,12 @@
   <body>
     <header class="page-header">
       <a class="page-header__link" href="#">
-        <img class="page-header__logo" src="#" alt="Логотип города Седона">
+        <img class="page-header__logo" src="#" alt="Логотип сайта о городе Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link">Главная</a>
+            <a class="navigation__link navigation__link-current">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">О Седоне</a>
@@ -33,7 +33,7 @@
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">
-              <span class="visually__hidden">
+              <span class="visually-hidden">
                 Избранное
               </span>
             </a>
@@ -44,7 +44,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-index">
       <h1 class="page-title visually-hidden">
         Седона
       </h1>
@@ -64,81 +64,80 @@
         <h2 class="section-title visually-hidden">
           Преимущества
         </h2>
-        <article class="advantages__cards">
+        <div class="advantages__cards">
           <div class="advantages__card">
             <h3 class="advantages__title">
               Настоящий городок
             </h3>
-            <p class="advantages__text">
+            <p class="advantages__description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
-          <div class="advantages-card">
+          <div class="advantages__card">
             <img class="advantages__image" src="#" alt="Недвижимость Седоны">
           </div>
-          <div class="advantages-card"></div>
-          <div class="advantages-card">
+          <div class="advantages__card"></div>
+          <div class="advantages__card">
             <h3 class="advantages__title">
               Небольшая площадь
             </h3>
-            <p class="advantages__text">
+            <p class="advantages__description">
               Все достопримечательности находятся очень близко
             </p>
           </div>
-          <div class="advantages-card">
+          <div class="advantages__card">
             <h3 class="advantages__title">
               Красивая дорога
             </h3>
-            <p class="advantages__text">
+            <p class="advantages__description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </div>
-          <div class="advantages-card">
+          <div class="advantages__card">
             <h3 class="advantages__title">
               Мало туристов
             </h3>
-            <p class="advantages__text">
+            <p class="advantages__description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </div>
-          <div class="advantages-card">
+          <div class="advantages__card">
             <img class="advantages__image" src="#" alt="Скалы Седоны и Мост Дьявола">
           </div>
-          <div class="advantages-card">
-          </div>
-          <div class="advantages-card">
+          <div class="advantages__card"></div>
+          <div class="advantages__card">
             <h3 class="advantages__title">
               Там есть мост дьявола
             </h3>
-            <p class="advantages__text">
+            <p class="advantages__description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
           </div>
-          <div class="advantages-card">
+          <div class="advantages__card">
             <h3 class="advantages__title">
               Жилье
             </h3>
-            <p class="advantages__text">
+            <p class="advantages__description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </div>
-          <div class="advantages-card">
+          <div class="advantages__card">
             <h3 class="advantages__title">
               Еда
             </h3>
-            <p class="advantages__text">
+            <p class="advantages__description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </div>
-          <div class="advantages-card">
+          <div class="advantages__card">
             <h3 class="advantages__title">
               Сувениры
             </h3>
-            <p class="advantages__text">
+            <p class="advantages__description">
               Не только китайского, но и настоящего местного производства!
             </p>
           </div>
-        </article>
+        </div>
       </section>
       <section class="searching">
         <h2 class="section-title visually-hidden">
@@ -167,30 +166,41 @@
         </form>
       </section>
     </main>
-    <footer>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a href="#" class="footer__link">
-            VK
-          </a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">
-            Telegram
-          </a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">
-            Youtube
-          </a>
-        </li>
-      </ul>
-      <a href="tel:+78128121212">
-        +7 (812) 812-12-12
-      </a>
-      <a class="footer__link" href="#">
-        <img class="footer__logo" src="#" alt="Логотип HTML Academy">
-      </a>
+    <footer class="page-footer">
+      <section class="contacts">
+        <h2 class="section-title visually-hidden">
+          Контакты
+        </h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="#">
+              <span class="visually-hidden">
+                VK
+              </span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="#">
+              <span class="visually-hidden">
+                Telegram
+              </span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="#">
+              <span class="visually-hidden">
+                Youtube
+              </span>
+            </a>
+          </li>
+        </ul>
+        <a class="contacts__phone" href="tel:+78128121212">
+          +7 (812) 812-12-12
+        </a>
+        <a class="contacts__link" href="#">
+          <img class="contacts__logo" src="#" alt="Логотип HTML Academy">
+        </a>
+      </section>
     </footer>
   </body>
 
