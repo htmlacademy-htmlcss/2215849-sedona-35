@@ -9,7 +9,8 @@
   <body>
     <header class="page-header">
       <a class="page-header__link" href="#">
-        <img class="page-header__logo" src="#" alt="Логотип сайта о городе Седона">
+        <img class="page-header__logo" src="images/page-header__logo.svg" width="140" height="70"
+          alt="Логотип сайта о городе Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation__list">
@@ -20,7 +21,7 @@
             <a class="navigation__link" href="#">О Седоне</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Гостиницы</a>
+            <a class="navigation__link" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation__list navigation__user">
@@ -39,7 +40,7 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Хочу сюда</a>
+            <button class="navigation__button page-button" type="button">Хочу сюда</button>
           </li>
         </ul>
       </nav>
@@ -49,95 +50,102 @@
         Седона
       </h1>
       <section class="hero">
-        <h2 class="section-title visually-hidden">
-          Седона - городок в Аризоне
-        </h2>
-        <img class="hero__image" src="#" alt="Горы Седоны">
-        <p class="section-text hero__text">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </p>
-        <p class="section-subtext hero__subtext">
-          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-        </p>
+        <div class="hero__preview">
+          <h2 class="section-title visually-hidden">
+            Седона - городок в Аризоне
+          </h2>
+          <img class="hero__logo" src="images/hero__logo.svg" width="458" height="352"
+            alt="Логотип приглашение посетить город Седона">
+        </div>
+        <div class="hero__motivation">
+          <p class="section-text hero__text">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </p>
+          <p class="section-subtext hero__subtext">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="section-title visually-hidden">
           Преимущества
         </h2>
-        <div class="advantages__cards">
-          <div class="advantages__card">
-            <h3 class="advantages__title">
-              Настоящий городок
-            </h3>
-            <p class="advantages__description">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
-          </div>
-          <div class="advantages__card">
-            <img class="advantages__image" src="#" alt="Недвижимость Седоны">
-          </div>
-          <div class="advantages__card"></div>
-          <div class="advantages__card">
-            <h3 class="advantages__title">
+        <ul class="advantages__list flex">
+          <li class="advantages__item flex">
+            <div class="advantages__card">
+              <h3 class="advantages__title advantages__title-border">
+                Настоящий городок
+              </h3>
+              <p class="advantages__description">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
+            <img class="advantages__image" src="images/advantages__property.jpg" width="800" height="384"
+              alt="Недвижимость Седоны">
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title advantages__title-border">
               Небольшая площадь
             </h3>
             <p class="advantages__description">
               Все достопримечательности находятся очень близко
             </p>
-          </div>
-          <div class="advantages__card">
-            <h3 class="advantages__title">
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title advantages__title-border">
               Красивая дорога
             </h3>
             <p class="advantages__description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
-          </div>
-          <div class="advantages__card">
-            <h3 class="advantages__title">
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title advantages__title-border">
               Мало туристов
             </h3>
             <p class="advantages__description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
-          </div>
-          <div class="advantages__card">
-            <img class="advantages__image" src="#" alt="Скалы Седоны и Мост Дьявола">
-          </div>
-          <div class="advantages__card"></div>
-          <div class="advantages__card">
-            <h3 class="advantages__title">
-              Там есть мост дьявола
-            </h3>
-            <p class="advantages__description">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
-          </div>
-          <div class="advantages__card">
+          </li>
+          <li class="advantages__item flex">
+            <img class="advantages__image" src="images/advantages__rocks.jpg" width="800" height="384"
+              alt="Скалы Седоны и Мост Дьявола">
+            <div class="advantages__card">
+              <h3 class="advantages__title advantages__title-border">
+                Там есть мост дьявола
+              </h3>
+              <p class="advantages__description">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
+          </li>
+        </ul>
+        <ul class="advantages__list flex">
+          <li class="advantages__item advantages__item-house">
             <h3 class="advantages__title">
               Жилье
             </h3>
             <p class="advantages__description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
-          </div>
-          <div class="advantages__card">
+          </li>
+          <li class="advantages__item advantages__item-food">
             <h3 class="advantages__title">
               Еда
             </h3>
             <p class="advantages__description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
-          </div>
-          <div class="advantages__card">
+          </li>
+          <li class="advantages__item advantages__item-gift">
             <h3 class="advantages__title">
               Сувениры
             </h3>
             <p class="advantages__description">
               Не только китайского, но и настоящего местного производства!
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="searching">
         <h2 class="section-title visually-hidden">
@@ -149,6 +157,7 @@
         <p class="section-subtext searching__subtext">
           Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
+        <button class="searching__button page-button" type="button">Поиск гостиницы в Седоне</button>
       </section>
       <section class="subscribe">
         <h2 class="section-title visually-hidden">
@@ -173,21 +182,21 @@
         </h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <a class="contacts__link" href="#">
+            <a class="contacts__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">
                 VK
               </span>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="#">
+            <a class="contacts__link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">
                 Telegram
               </span>
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="#">
+            <a class="contacts__link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">
                 Youtube
               </span>
@@ -197,8 +206,8 @@
         <a class="contacts__phone" href="tel:+78128121212">
           +7 (812) 812-12-12
         </a>
-        <a class="contacts__link" href="#">
-          <img class="contacts__logo" src="#" alt="Логотип HTML Academy">
+        <a class="contacts__link" href="https://www.htmlacademy.ru">
+          <img class="contacts__logo" src="images/html__academy.svg" alt="Логотип HTML Academy">
         </a>
       </section>
     </footer>
