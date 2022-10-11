@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -12,8 +13,8 @@
         <img class="page-header-logo" src="images/page-header-logo.svg" width="140" height="70"
           alt="Логотип сайта о городе Седона.">
       </a>
-      <nav class="navigation">
-        <ul class="navigation-list">
+      <nav class="navigation flex">
+        <ul class="navigation-list flex">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current">Главная</a>
           </li>
@@ -24,10 +25,10 @@
             <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-list navigation-user flex">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">
+              <span class="navigation-search visually-hidden">
                 Поиск
               </span>
             </a>
