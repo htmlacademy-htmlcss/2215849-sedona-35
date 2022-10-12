@@ -65,6 +65,38 @@ body {
   line-height: 20px;
 }
 
+.navigation-search {
+  position: relative;
+}
+
+.navigation-search::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -19px;
+  width: 44px;
+  height: 64px;
+  background-image: url(../images/navigation-search.svg);
+  background-size: 44px 64px;
+  background-repeat: no-repeat;
+}
+
+.navigation-favorits {
+  position: relative;
+}
+
+.navigation-favorits::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: -19px;
+  width: 44px;
+  height: 64px;
+  background-image: url(../images/navigation-favorits.svg);
+  background-size: 44px 64px;
+  background-repeat: no-repeat;
+}
+
 .hero-preview {
   background: url(../images/hero-bottom.svg) bottom/100% auto no-repeat,
   url(../images/hero-background.jpg) center/100% auto no-repeat;
