@@ -1,18 +1,11 @@
+/* FONTS */
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2"),
-  url(../fonts/ptsans-400.woff) format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2"),
-    url(../fonts/ptsans-400.woff) format("woff");
+  src: url("../fonts/ptsans-400.woff2") format("woff2"),
+  url("../fonts/ptsans-400.woff") format("woff");
   font-display: swap;
 }
 
@@ -20,19 +13,12 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2"),
-  url(../fonts/ptsans-700.woff) format("woff");
+  src: url("../fonts/ptsans-700.woff2") format("woff2"),
+  url("../fonts/ptsans-700.woff") format("woff");
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2"),
-  url(../fonts/ptsans-700.woff) format("woff");
-  font-display: swap;
-}
+/* COMMON STYLES */
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -40,6 +26,10 @@ body {
   line-height: 21px;
   background-color: #FFFFFF;
   color: #000000;
+}
+
+.flex {
+  display: flex;
 }
 
 .page-button {
@@ -50,6 +40,25 @@ body {
   border: none;
   color: #FFFFFF;
 }
+
+.section-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-subtext {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+/* INDIVIDUAL STYLES */
+/* HEADER*/
 
 .page-header {
   font-size: 20px;
@@ -75,12 +84,12 @@ body {
 .navigation-search::before {
   content: "";
   position: absolute;
-  left: -35px;
-  top: -19px;
-  width: 44px;
-  height: 64px;
-  background-image: url(../images/navigation-search.svg);
-  background-size: 44px 64px;
+  left: -22px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/navigation-search.svg");
+  background-size: 20px 20px;
   background-repeat: no-repeat;
 }
 
@@ -93,10 +102,10 @@ body {
   position: absolute;
   left: -22px;
   top: 4px;
-  width: 44px;
-  height: 64px;
-  background-image: url(../images/navigation-favorits.svg);
-  background-size: 44px 64px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/navigation-favorits.svg");
+  background-size: 20px 20px;
   background-repeat: no-repeat;
 }
 
@@ -106,31 +115,21 @@ body {
   padding: 8px 34px;
 }
 
+/* MAIN*/
+/* HERO */
+
 .hero-preview {
-  background: url(../images/hero-bottom.svg) bottom/100% auto no-repeat,
-  url(../images/hero-background.jpg) center/100% auto no-repeat;
+  background: url("../images/hero-bottom.svg") bottom/100% auto no-repeat,
+  url("../images/hero-background.jpg") center/100% auto no-repeat;
   vertical-align: bottom;
   background-color: #FFFFFF;
 }
 
-.section-text {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.section-subtext {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-  color: #333333;
-}
+/* ADVANTAGES */
 
 .advantages-item {
   list-style: none;
+  flex-direction: column;
 }
 
 .advantages-item-colorized {
@@ -162,34 +161,60 @@ body {
   text-align: center;
 }
 
-/* Первый способ размещения изображения */
-
-.advantages-item-house {
-  position: relative;
+.advantages-title-house {
+  display: flex;
+  flex-direction: column;
 }
 
-.advantages-item-house::before {
+.advantages-title-house::before {
   content: "";
-    position: absolute;
-    left: -22px;
-    top: 4px;
-    width: 75px;
-    height: 72px;
-    background-image: url(../images/house.svg);
-    background-size: 75px 72px;
-    background-repeat: no-repeat;
+  margin: 0 auto 30px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/house.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
 }
 
-/* Второй способ размещения изображения */
+.advantages-title-food {
+  display: flex;
+  flex-direction: column;
+}
 
-.advantages-item-food {
-  display: inline-block;
+.advantages-title-food::before {
+  content: "";
+  margin: 0 auto 30px;
   width: 75px;
   height: 72px;
   background-image: url("../images/food.svg");
-  background-size: cover;
-  background-position: center center;
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
 }
+
+.advantages-title-gift {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-title-gift::before {
+  content: "";
+  margin: 0 auto 30px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/gift.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+}
+
+/* SEARCHING */
+
+.searching-button {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px;
+}
+
+/* SUBSCRIBE */
 
 .subscribe {
   background-image: url("../images/subscribe-background.jpg");
@@ -201,12 +226,6 @@ body {
   color: #FFFFFF;
 }
 
-.searching-button {
-  font-size: 20px;
-  line-height: 36px;
-  padding: 8px 50px;
-}
-
 .subscribe-button {
   font-weight: 700;
   font-size: 20px;
@@ -215,9 +234,10 @@ body {
   background: #82B3D3;
   color: #FFFFFF;
   border: none;
-  border-radius: 0px 4px 4px 0px;
-  padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
 }
+
+/* CONTACTS */
 
 .contacts-phone {
   font-weight: 400;
@@ -233,52 +253,4 @@ body {
 
 .contacts-link {
   text-decoration: none;
-}
-
-.contacts-vk {
-  position: relative;
-}
-
-.contacts-vk::before {
-  content: "";
-  position: absolute;
-  left: -22px;
-  top: 4px;
-  width: 24px;
-  height: 14px;
-  background-image: url(../images/vk.svg);
-  background-size: 24px 14px;
-  background-repeat: no-repeat;
-}
-
-.contacts-telegram {
-  position: relative;
-}
-
-.contacts-telegram::before {
-  content: "";
-  position: absolute;
-  left: -22px;
-  top: 4px;
-  width: 18px;
-  height: 16px;
-  background-image: url(../images/telegram.svg);
-  background-size: 18px 16px;
-  background-repeat: no-repeat;
-}
-
-.contacts-youtube {
-  position: relative;
-}
-
-.contacts-youtube::before {
-  content: "";
-  position: absolute;
-  left: -22px;
-  top: 4px;
-  width: 22px;
-  height: 17px;
-  background-image: url(../images/youtube.svg);
-  background-size: 22px 17px;
-  background-repeat: no-repeat;
 }
