@@ -1,0 +1,256 @@
+/* FONTS */
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2"),
+  url("../fonts/ptsans-400.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2"),
+  url("../fonts/ptsans-700.woff") format("woff");
+  font-display: swap;
+}
+
+/* COMMON STYLES */
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.flex {
+  display: flex;
+}
+
+.page-button {
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #756157;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+}
+
+.section-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-subtext {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+/* INDIVIDUAL STYLES */
+/* HEADER*/
+
+.page-header {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.navigation-item {
+  list-style: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+
+.navigation-search {
+  position: relative;
+}
+
+.navigation-search::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/navigation-search.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.navigation-favorits {
+  position: relative;
+}
+
+.navigation-favorits::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/navigation-favorits.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.navigation-button {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 34px;
+}
+
+/* MAIN*/
+/* HERO */
+
+.hero-preview {
+  background: url("../images/hero-bottom.svg") bottom/100% auto no-repeat,
+  url("../images/hero-background.jpg") center/100% auto no-repeat;
+  vertical-align: bottom;
+  background-color: #FFFFFF;
+}
+
+/* ADVANTAGES */
+
+.advantages-item {
+  list-style: none;
+  flex-direction: column;
+}
+
+.advantages-item-colorized {
+  color: #FFFFFF;
+}
+
+.advantages-card {
+  background-color: #82B3D3;
+}
+
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  text-align: center;
+}
+
+.advantages-title-house {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-title-house::before {
+  content: "";
+  margin: 0 auto 30px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/house.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+}
+
+.advantages-title-food {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-title-food::before {
+  content: "";
+  margin: 0 auto 30px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/food.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+}
+
+.advantages-title-gift {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-title-gift::before {
+  content: "";
+  margin: 0 auto 30px;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/gift.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+}
+
+/* SEARCHING */
+
+.searching-button {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px;
+}
+
+/* SUBSCRIBE */
+
+.subscribe {
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: 100% auto;
+  color: #FFFFFF;
+}
+
+.subscribe .subscribe-subtext {
+  color: #FFFFFF;
+}
+
+.subscribe-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px;
+  background: #82B3D3;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+/* CONTACTS */
+
+.contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.contacts-link {
+  text-decoration: none;
+}
