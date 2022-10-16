@@ -20,12 +20,59 @@
 
 /* COMMON STYLES */
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #FFFFFF;
   color: #000000;
+  background-color: #F2F2F2;;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px 0px #00000033;
+}
+
+.wrapper-inner {
+  max-width: 1200px;
+  padding: 0 70px;
 }
 
 .flex {
@@ -65,6 +112,14 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+}
+
+.page-header-link {
+  margin-right: 30px;
+}
+
+.navigation-list {
+  margin-right: auto;
 }
 
 .navigation-item {
