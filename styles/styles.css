@@ -28,6 +28,7 @@
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 html {
@@ -35,9 +36,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -51,6 +49,17 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
   box-shadow: 0 0 15px 0 #00000033;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper-inner {
+  padding: 0 70px;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .flex {
@@ -97,7 +106,6 @@ body {
 /* HEADER*/
 
 .page-header {
-  padding: 0 70px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -185,10 +193,6 @@ body {
 
 /* MAIN*/
 /* HERO */
-
-.main-index {
-  flex-grow: 1;
-}
 
 .hero {
   flex-direction: column;
@@ -426,4 +430,138 @@ body {
 
 .contacts-link {
   text-decoration: none;
+}
+
+
+/* CATALOG PAGE */
+/* CATALOG-SEARCHING */
+
+.catalog-searching {
+  padding-top: 35px;
+  padding-bottom: 70px;
+  background-image: url("../images/catalog-background.jpg");
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  margin: 0 0 40px;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+}
+
+.breadcrumbs-item:not(:last-of-type) {
+  margin-right: 28px;
+}
+
+.catalog-searching-form {
+  justify-content: space-between;
+}
+
+.catalog-left {
+  width: 370px;
+}
+
+.catalog-right {
+  width: 549px;
+  justify-content: space-between;
+}
+
+.catalog-searching-group {
+  border: none;
+}
+
+.catalog-searching-group:not(:last-of-type) {
+  margin-right: 70px;
+}
+
+.catalog-searching-title {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-searching-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+}
+
+.catalog-searching-group {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-searching-item:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.control-input {
+  margin: 0 16px 0 0;
+}
+
+.catalog-searching-input {
+  margin: 0;
+  padding: 0;
+  width: 143px;
+  height: 48px;
+  text-align: right;
+  border: none;
+  border-radius: 4px;
+}
+
+.catalog-searching-input:first-of-type {
+  margin-right: 2px;
+}
+
+.catalog-searching-buttons {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.searching-result-area {
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+}
+
+.accommodation-stars {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hotel-rank {
+  grid-template-columns: 140px 140px;
+  gap: 20px;
+}
+
+.accommodation-card {
+  width: 340px;
+  min-height: 438px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.accommodation-price {
+  text-align: right;
+}
+
+.accommodation-detail {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 26px;
 }
