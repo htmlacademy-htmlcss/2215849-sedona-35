@@ -66,6 +66,10 @@ main {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .page-button {
   font-weight: 700;
   text-transform: uppercase;
@@ -103,6 +107,7 @@ main {
 }
 
 /* INDIVIDUAL STYLES */
+/* <---------- INDEX.html ----------> */
 /* HEADER*/
 
 .page-header {
@@ -266,7 +271,6 @@ main {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
@@ -391,6 +395,7 @@ main {
   border: none;
   border-radius: 0 4px 4px 0;
 }
+
 /*FOOTER*/
 /* CONTACTS */
 
@@ -432,8 +437,7 @@ main {
   text-decoration: none;
 }
 
-
-/* CATALOG PAGE */
+/* <---------- CATALOG.html ----------> */
 /* CATALOG-SEARCHING */
 
 .catalog-searching {
@@ -506,8 +510,14 @@ main {
   margin-bottom: 16px;
 }
 
-.control-input {
+.catalog-control-input {
   margin: 0 16px 0 0;
+}
+
+.catalog-searching-consolidated {
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
 }
 
 .catalog-searching-input {
@@ -518,6 +528,8 @@ main {
   text-align: right;
   border: none;
   border-radius: 4px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .catalog-searching-input:first-of-type {
@@ -528,8 +540,50 @@ main {
   flex-direction: column;
 }
 
-.grid {
-  display: grid;
+.catalog-button-submit {
+  padding: 8px 50px;
+  margin-bottom: 32px;
+  background-color: #82B3D3;
+}
+
+.catalog-button-reset {
+  padding: 8px 50px;
+  background-color: transparent;
+}
+
+/* SEARCHING-RESULT */
+
+.searching-result {
+  padding: 50px 0 40px;
+}
+
+.result-navigation {
+  margin: 0;
+  padding: 0 0 40px;
+  justify-content: space-between;
+}
+
+.result-navigation-count {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.result-navigation-select {
+
+}
+
+.result-navigation-list {
+  list-style: none;
+  margin: 0;
+  align-items: center;
+}
+
+.result-navigation-link {
+  text-decoration: none;
 }
 
 .searching-result-area {
