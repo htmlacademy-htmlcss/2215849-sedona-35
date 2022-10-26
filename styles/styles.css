@@ -547,19 +547,20 @@ main {
 }
 
 .catalog-button-reset {
-  padding: 8px 50px;
+  padding: 0;
   background-color: transparent;
 }
 
 /* SEARCHING-RESULT */
 
 .searching-result {
-  padding: 50px 0 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .result-navigation {
   margin: 0;
-  padding: 0 0 40px;
+  padding: 0;
   justify-content: space-between;
 }
 
@@ -570,10 +571,6 @@ main {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-}
-
-.result-navigation-select {
-
 }
 
 .result-navigation-list {
@@ -589,17 +586,8 @@ main {
 .searching-result-area {
   grid-template-columns: 340px 340px 340px;
   gap: 20px;
-}
-
-.accommodation-stars {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.hotel-rank {
-  grid-template-columns: 140px 140px;
-  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .accommodation-card {
@@ -610,12 +598,88 @@ main {
   border-radius: 4px;
 }
 
+.accommodation-card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.accommodation-card-image {
+  margin-bottom: 16px;
+}
+
+.accommodation-card-title {
+  margin: 0 0 16px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotel-rank {
+  grid-template-columns: 140px 140px;
+  gap: 20px;
+}
+
+.accommodation-type {
+  margin: 0;
+  color: #333333;
+}
+
 .accommodation-price {
+  margin: 0;
   text-align: right;
+  color: #333333;
 }
 
 .accommodation-detail {
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 26px;
+  padding: 8px 0;
+}
+
+.accommodation-faivorits {
+  background-color: #82B3D3;
+}
+
+.accommodation-faivorits-add {
+  background: #7DB54F;
+}
+
+.accommodation-stars {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accommodation-rating {
+  margin: 0;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.pagination-item:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: #FFFFFF;
 }
