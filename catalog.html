@@ -98,20 +98,21 @@
                 <legend class="catalog-searching-title">Тип жилья:</legend>
                 <ul class="catalog-searching-list">
                   <li class="catalog-searching-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="hotel">
+                    <label for="hotel">
+                      <input class="catalog-control-input" type="radio" name="property" id="hotel" value="hotel">
                       Гостиница
                     </label>
                   </li>
                   <li class="catalog-searching-item">
-                    <label class="catalog-control">
-                      <input class="catalog-control-input" type="radio" name="motel">
+                    <label for="motel">
+                      <input class="catalog-control-input" type="radio" name="property" id="motel" value="motel">
                       Мотель
                     </label>
                   </li>
                   <li class="catalog-searching-item">
-                    <label class="catalog-control">
-                      <input class="catalog-control-input" type="radio" name="apartments">
+                    <label for="appartaments">
+                      <input class="catalog-control-input" type="radio" name="property" id="appartaments"
+                        value="appartaments">
                       Апартаменты
                     </label>
                   </li>
@@ -136,6 +137,7 @@
           </form>
         </section>
         <section class="searching-result wrapper-inner">
+          <h2 class="visually-hidden">Все гостиницы Седоны</h2>
           <nav class="result-navigation flex">
             <p class="result-navigation-count">Найдено гостиниц: 38</p>
             <select class="result-navigation-select" aria-label="Сортировка">
@@ -164,7 +166,7 @@
           <article class="searching-result-area grid">
             <div class="accommodation-card">
               <a class="accommodation-card-link" href="#">
-                <img class="accommodation-card-image" src="/images/hotel-1.jpg" width="300" height="212"
+                <img class="accommodation-card-image" src="images/hotel-1.jpg" width="300" height="212"
                   alt="Вид на локацию отеля.">
                 <h3 class="accommodation-card-title">Amara Resort & Spa</h3>
               </a>
@@ -184,7 +186,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -196,7 +198,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -208,7 +210,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -220,7 +222,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -234,7 +236,7 @@
             </div>
             <div class="accommodation-card">
               <a class="accommodation-card-link" href="#">
-                <img class="accommodation-card-image" src="/images/hotel-2.jpg" width="300" height="212"
+                <img class="accommodation-card-image" src="images/hotel-2.jpg" width="300" height="212"
                   alt="Вид на локацию отеля.">
                 <h3 class="accommodation-card-title">Villas at Poco Diablo</h3>
               </a>
@@ -254,7 +256,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -266,7 +268,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -277,7 +279,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -289,7 +291,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -303,7 +305,7 @@
             </div>
             <div class="accommodation-card">
               <a class="accommodation-card-link" href="#">
-                <img class="accommodation-card-image" src="/images/hotel-3.jpg" width="300" height="212"
+                <img class="accommodation-card-image" src="images/hotel-3.jpg" width="300" height="212"
                   alt="Вид на локацию отеля.">
                 <h3 class="accommodation-card-title">Desert Quail Inn</h3>
               </a>
@@ -323,7 +325,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -335,7 +337,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -347,7 +349,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -361,7 +363,7 @@
             </div>
             <div class="accommodation-card">
               <a class="accommodation-card-link" href="#">
-                <img class="accommodation-card-image" src="/images/hotel-4.jpg" width="300" height="212"
+                <img class="accommodation-card-image" src="images/hotel-4.jpg" width="300" height="212"
                   alt="Вид на локацию отеля.">
                 <h3 class="accommodation-card-title">GreenTree Inn</h3>
               </a>
@@ -381,7 +383,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -393,7 +395,7 @@
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
-                        <clipPath id="a">
+                        <clipPath>
                           <path fill="#fff" d="M0 0h18v17H0z" />
                         </clipPath>
                       </defs>
@@ -408,7 +410,7 @@
           </article>
           <ul class="pagination flex">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-link-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -420,7 +422,10 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
+              <a class="pagination-link pagination-link-empty" href="#">&hellip;</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
         </section>
