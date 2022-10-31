@@ -7,37 +7,37 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
-  <body>
+  <body class="null">
     <div class="wrapper">
       <header class="page-header wrapper-inner flex">
         <a class="page-header-link" href="index.html">
           <img class="page-header-logo" src="images/page-header-logo.svg" width="140" height="70"
             alt="Логотип сайта о городе Седона.">
         </a>
-        <nav class="navigation flex">
-          <ul class="navigation-list flex">
-            <li class="navigation-item">
+        <nav class="navigation null flex">
+          <ul class="navigation-list null flex">
+            <li class="navigation-item null">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item null">
               <a class="navigation-link" href="#">О&nbsp;Седоне</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item null">
               <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user flex">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="navigation-search visually-hidden">Поиск</span>
+          <ul class="navigation-list null navigation-user flex">
+            <li class="navigation-item null">
+              <a class="navigation-link navigation-search" href="#">
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <span class="navigation-favorits visually-hidden">Избранное</span>
+            <li class="navigation-item null">
+              <a class="navigation-link navigation-favorits" href="#">
+                <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item null">
               <button class="navigation-button page-button" type="button">Хочу&nbsp;сюда</button>
             </li>
           </ul>
@@ -49,10 +49,11 @@
             <h1 class="inner-header-title">
               Гостиницы Седоны
             </h1>
-            <ul class="breadcrumbs flex">
+            <ul class="breadcrumbs null flex">
               <li class="breadcrumbs-item">
                 <a href="index.html" class="breadcrumbs-link">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
                       fill="white" />
@@ -69,11 +70,11 @@
           </header>
           <form class="catalog-searching-form flex" action="https://echo.htmlacademy.ru/" method="get">
             <div class="catalog-left flex">
-              <fieldset class="catalog-searching-group">
+              <fieldset class="catalog-searching-group null flex">
                 <legend class="catalog-searching-title">
                   Инфраструктура:
                 </legend>
-                <ul class="catalog-searching-list">
+                <ul class="catalog-searching-list null">
                   <li class="catalog-searching-item">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="pool">
@@ -94,9 +95,9 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-searching-group flex">
+              <fieldset class="catalog-searching-group null flex">
                 <legend class="catalog-searching-title">Тип жилья:</legend>
-                <ul class="catalog-searching-list">
+                <ul class="catalog-searching-list null">
                   <li class="catalog-searching-item">
                     <label for="hotel">
                       <input class="catalog-control-input" type="radio" name="property" id="hotel" value="hotel">
@@ -124,9 +125,9 @@
                 <legend class="catalog-searching-title">
                   Стоимость, &#8381;:
                 </legend>
-                <p class="catalog-searching-consolidated">
-                  <input class="catalog-searching-input" type="number" placeholder="от">
-                  <input class="catalog-searching-input" type="number" placeholder="до">
+                <p class="catalog-searching-consolidated null">
+                  <input class="catalog-searching-input null" type="number" placeholder="от">
+                  <input class="catalog-searching-input null" type="number" placeholder="до">
                 </p>
                 <span class="catalog-searching-buttons flex">
                   <button class="page-button catalog-button-submit" type="submit">Применить</button>
@@ -138,26 +139,60 @@
         </section>
         <section class="searching-result wrapper-inner">
           <h2 class="visually-hidden">Все гостиницы Седоны</h2>
-          <nav class="result-navigation flex">
-            <p class="result-navigation-count">Найдено гостиниц: 38</p>
+          <nav class="result-navigation null flex">
+            <p class="result-navigation-count null">Найдено гостиниц: 38</p>
             <select class="result-navigation-select" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвое</option>
               <option value="popular">Сначала популярное</option>
               <option value="expensive">Сначала дорогое</option>
             </select>
-            <ul class="result-navigation-list flex">
-              <li class="result-navigation-item">
-                <a class="result-navigation-link button button-current" href="#">
+            <ul class="result-navigation-list null flex">
+              <li class="result-navigation-item visual-current">
+                <a class="result-navigation-link  flex" href="#">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="" fill="#000">
+                      <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
               <li class="result-navigation-item">
-                <a class="result-navigation-link button" href="#">
+                <a class="result-navigation-link flex" href="#">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="" fill="#000">
+                      <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="visually-hidden">Показать слайдер</span>
                 </a>
               </li>
               <li class="result-navigation-item">
-                <a href="#" class="result-navigation-link button">
+                <a href="#" class="result-navigation-link flex">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="" fill="#000">
+                      <path
+                        d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -179,10 +214,10 @@
                 </p>
                 <button class="accommodation-detail page-button">Подробнее</button>
                 <button class="accommodation-faivorits page-button">В избранное</button>
-                <ul class="accommodation-stars flex">
+                <ul class="accommodation-stars null flex">
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -194,7 +229,7 @@
                   </li>
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -206,7 +241,7 @@
                   </li>
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -218,7 +253,7 @@
                   </li>
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -229,7 +264,7 @@
                     </svg>
                   </li>
                 </ul>
-                <p class="accommodation-rating">
+                <p class="accommodation-rating null">
                   Рейтинг: 8,5
                 </p>
               </div>
@@ -249,10 +284,10 @@
                 </p>
                 <button class="accommodation-detail page-button">Подробнее</button>
                 <button class="accommodation-faivorits accommodation-faivorits-add  page-button">В избранное</button>
-                <ul class="accommodation-stars flex">
+                <ul class="accommodation-stars null flex">
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -264,7 +299,7 @@
                   </li>
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -275,7 +310,7 @@
                     </svg>
                   </li>
                   <li><svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -287,7 +322,7 @@
                   </li>
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -298,7 +333,7 @@
                     </svg>
                   </li>
                 </ul>
-                <p class="accommodation-rating">
+                <p class="accommodation-rating null">
                   Рейтинг: 9,2
                 </p>
               </div>
@@ -307,21 +342,21 @@
               <a class="accommodation-card-link" href="#">
                 <img class="accommodation-card-image" src="images/hotel-3.jpg" width="300" height="212"
                   alt="Вид на локацию отеля.">
-                <h3 class="accommodation-card-title">Desert Quail Inn</h3>
+                <h3 class="accommodation-card-title  null">Desert Quail Inn</h3>
               </a>
               <div class="hotel-rank grid">
-                <p class="accommodation-type">
+                <p class="accommodation-type null">
                   Гостиница
                 </p>
-                <p class="accommodation-price">
+                <p class="accommodation-price null">
                   От 2500 &#8381;
                 </p>
                 <button class="accommodation-detail page-button">Подробнее</button>
                 <button class="accommodation-faivorits page-button">В избранное</button>
-                <ul class="accommodation-stars flex">
+                <ul class="accommodation-stars null flex">
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -333,7 +368,7 @@
                   </li>
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -345,7 +380,7 @@
                   </li>
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -356,7 +391,7 @@
                     </svg>
                   </li>
                 </ul>
-                <p class="accommodation-rating">
+                <p class="accommodation-rating null">
                   Рейтинг: 6,9
                 </p>
               </div>
@@ -365,21 +400,21 @@
               <a class="accommodation-card-link" href="#">
                 <img class="accommodation-card-image" src="images/hotel-4.jpg" width="300" height="212"
                   alt="Вид на локацию отеля.">
-                <h3 class="accommodation-card-title">GreenTree Inn</h3>
+                <h3 class="accommodation-card-title null">GreenTree Inn</h3>
               </a>
               <div class="hotel-rank grid">
-                <p class="accommodation-type">
+                <p class="accommodation-type null">
                   Гостиница
                 </p>
-                <p class="accommodation-price">
+                <p class="accommodation-price null">
                   От 1500 &#8381;
                 </p>
                 <button class="accommodation-detail page-button">Подробнее</button>
                 <button class="accommodation-faivorits page-button">В избранное</button>
-                <ul class="accommodation-stars flex">
+                <ul class="accommodation-stars null flex">
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -391,7 +426,7 @@
                   </li>
                   <li>
                     <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#a)">
+                      <g clip-path="">
                         <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
                       </g>
                       <defs>
@@ -402,13 +437,13 @@
                     </svg>
                   </li>
                 </ul>
-                <p class="accommodation-rating">
+                <p class="accommodation-rating null">
                   Рейтинг: 5,0
                 </p>
               </div>
             </div>
           </article>
-          <ul class="pagination flex">
+          <ul class="pagination null flex">
             <li class="pagination-item">
               <a class="pagination-link pagination-link-current">1</a>
             </li>
@@ -433,10 +468,10 @@
           <h2 class="section-title visually-hidden">
             Подписка
           </h2>
-          <p class="section-text subscribe-text">
+          <p class="section-text null subscribe-text">
             Подпишитесь на рассылку
           </p>
-          <p class="section-subtext subscribe-subtext">
+          <p class="section-subtext null subscribe-subtext">
             Только полезная информация и никакого спама, <br> честное бойскаутское!
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
@@ -450,9 +485,15 @@
           <h2 class="section-title visually-hidden">
             Контакты
           </h2>
-          <ul class="contacts-list flex">
+          <ul class="contacts-list null flex">
             <li class="contacts-item contacts-vk">
               <a class="contacts-link" href="https://vk.com/htmlacademy">
+                <svg class="contacts-icon" aria-hidden="true" focusable="false" width="25" height="15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z"
+                    fill="#83B3D3" />
+                </svg>
                 <span class="visually-hidden">
                   VK
                 </span>
@@ -460,6 +501,12 @@
             </li>
             <li class="contacts-item contacts-telegram">
               <a class="contacts-link" href="https://t.me/htmlacademy">
+                <svg class="contacts-icon" aria-hidden="true" focusable="false" width="18" height="16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"
+                    fill="#83B3D3" />
+                </svg>
                 <span class="visually-hidden">
                   Telegram
                 </span>
@@ -467,6 +514,12 @@
             </li>
             <li class="contacts-item contacts-youtube">
               <a class="contacts-link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="contacts-icon" aria-hidden="true" focusable="false" width="23" height="18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"
+                    fill="#83B3D3" />
+                </svg>
                 <span class="visually-hidden">
                   Youtube
                 </span>
