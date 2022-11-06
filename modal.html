@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body class="null">
+    <div class="wrapper">
+      <div class="modal-container">
+        <div class="modal-search">
+          <button class="modal-close-button null">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="section-text modal-title null">Поиск гостиницы в Седоне</h2>
+          </section>
+          <fieldset class="modal-fieldset null">
+            <ul class="modal-list null">
+              <li class="modal-item flex">
+                <label class="modal-label flex" for="check-in">Дата&nbsp;заезда:</label>
+                <p class="modal-consolidated null flex">
+                  <input class="modal-input" type="date" id="check-in" name="trip-start" value="2022-11-03"
+                    min="2022-11-03" max="2023-12-31">
+                  <span class="modal-subtext modal-subtext-error">Мы не можем отправить вас в прошлое.</span>
+                </p>
+              </li>
+              <li class="modal-item flex">
+                <label class="modal-label flex" for="check-out">Дата&nbsp;выезда:</label>
+                <p class="modal-consolidated null flex">
+                  <input class="modal-input" type="date" id="check-out" name="trip-end" value="2022-11-04"
+                    min="2022-11-04" max="2023-12-31">
+                  <span class="modal-subtext">На эти даты есть свободные номера. Пока есть.</span>
+                </p>
+            </ul>
+            <ul class="modal-list null flex">
+              <li class="modal-list flex">
+                <label class="modal-label flex" for="adults">Взрослые:</label>
+                <input class="modal-input" type="number" id="adults" name="adults" value="1" min="1">
+              </li>
+              <li class="modal-list modal-list-relative flex">
+                <label class="modal-label flex" for="kids">Дети:</label>
+                <div class="popover popover-modal">
+                  <div class="popover-content">
+                    <p class="popover-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                  </div>
+                </div>
+                <input class="modal-input" type="number" id="kids" name="kids" value="1" min="1">
+              </li>
+            </ul>
+            <button class="modal-button">Найти</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

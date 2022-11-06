@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Каталог</title>
-    <link rel="icon" href="images/fav.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -45,9 +45,9 @@
         </nav>
       </header>
       <main class="main-inner">
-        <section class="catalog-searching wrapper-inner flex">
-          <header class="inner-header">
-            <h1 class="inner-header-title">
+        <section class="catalog wrapper-inner flex">
+          <header class="catalog-header">
+            <h1 class="catalog-title">
               Гостиницы Седоны
             </h1>
             <ul class="breadcrumbs null flex">
@@ -69,71 +69,107 @@
               </li>
             </ul>
           </header>
-          <form class="catalog-searching-form flex" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-form flex" action="https://echo.htmlacademy.ru/" method="get">
             <div class="catalog-left flex">
-              <fieldset class="catalog-searching-group null flex">
-                <legend class="catalog-searching-title">
+              <fieldset class="catalog-grouped null flex">
+                <legend class="catalog-legend">
                   Инфраструктура:
                 </legend>
-                <ul class="catalog-searching-list null">
-                  <li class="catalog-searching-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="pool">
-                      Бассейн
+                <ul class="catalog-list null">
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="pool">
+                      <span class="catalog-point catalog-mark"></span>
+                      <span class="catalog-choose">
+                        Бассейн
+                      </span>
                     </label>
                   </li>
-                  <li class="catalog-searching-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="parking">
-                      Парковка
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="parking">
+                      <span class="catalog-point catalog-mark"></span>
+                      <span class="catalog-choose">
+                        Парковка
+                      </span>
                     </label>
                   </li>
-                  <li class="catalog-searching-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="wi-fi">
+                      <span class="catalog-point catalog-mark"></span>
+                      <span class="catalog-choose">
+                        Wi-Fi
+                      </span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-searching-group null flex">
-                <legend class="catalog-searching-title">Тип жилья:</legend>
-                <ul class="catalog-searching-list null">
-                  <li class="catalog-searching-item">
-                    <label for="hotel">
-                      <input class="catalog-control-input" type="radio" name="property" id="hotel" value="hotel">
-                      Гостиница
+              <fieldset class="catalog-grouped null flex">
+                <legend class="catalog-legend">Тип жилья:</legend>
+                <ul class="catalog-list null">
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-radio" type="radio" name="property" id="hotel" value="hotel">
+                      <span class="catalog-point catalog-dotted"></span>
+                      <span class="catalog-choose">
+                        Гостиница
+                      </span>
                     </label>
                   </li>
-                  <li class="catalog-searching-item">
-                    <label for="motel">
-                      <input class="catalog-control-input" type="radio" name="property" id="motel" value="motel">
-                      Мотель
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-radio" type="radio" name="property" id="motel" value="motel">
+                      <span class="catalog-point catalog-dotted"></span>
+                      <span class="catalog-choose">
+                        Мотель
+                      </span>
                     </label>
                   </li>
-                  <li class="catalog-searching-item">
-                    <label for="appartaments">
-                      <input class="catalog-control-input" type="radio" name="property" id="appartaments"
-                        value="appartaments">
-                      Апартаменты
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-radio" type="radio" name="property" id="appartaments" value="appartaments">
+                      <span class="catalog-point catalog-dotted"></span>
+                      <span class="catalog-choose">
+                        Апартаменты
+                      </span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
             </div>
             <div class="catalog-right">
-              <fieldset class="catalog-searching-group null flex">
-                <legend class="catalog-searching-title">
+              <fieldset class="catalog-grouped null flex">
+                <legend class="catalog-legend">
                   Стоимость, &#8381;:
                 </legend>
-                <p class="catalog-searching-consolidated null">
-                  <input class="catalog-searching-input null" type="number" placeholder="от">
-                  <input class="catalog-searching-input null" type="number" placeholder="до">
-                </p>
-                <span class="catalog-searching-buttons flex">
-                  <button class="page-button page-button-blue catalog-button-submit" type="submit">Применить</button>
-                  <button class="page-button catalog-button-reset" type="reset">Сбросить</button>
-                </span>
+                <div class="catalog-range flex">
+                  <p class="catalog-range-fields null">
+                    <input class="catalog-range-input radius-left null" type="number" name="min-price"
+                      placeholder="от" step="500">
+                    <input class="catalog-range-input radius-right null" type="number" name="max-price"
+                      placeholder="до" step="500">
+                  </p>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span class="catalog-searching-buttons flex">
+                    <button class="page-button page-button-blue catalog-button-submit" type="submit">Применить</button>
+                    <button class="page-button catalog-button-reset" type="reset">Сбросить</button>
+                  </span>
+                </div>
+
               </fieldset>
             </div>
           </form>
@@ -142,7 +178,7 @@
           <h2 class="visually-hidden">Все гостиницы Седоны</h2>
           <nav class="result-navigation null flex">
             <p class="result-navigation-count null">Найдено гостиниц: <span>38</span></p>
-            <select class="result-navigation-select" aria-label="Сортировка">
+            <select class="result-navigation-select field" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвое</option>
               <option value="popular">Сначала популярное</option>
               <option value="expensive">Сначала дорогое</option>
@@ -472,7 +508,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-link-empty" href="#">&hellip;</a>
+              <a class="pagination-link pagination-link-empty">&hellip;</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
