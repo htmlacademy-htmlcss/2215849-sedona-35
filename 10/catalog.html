@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - Каталог</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <base href="https://htmlacademy-htmlcss.github.io/2215849-sedona-35/10/">
+</head>
+
+  <body class="null">
+    <div class="wrapper">
+      <header class="page-header wrapper-inner flex">
+        <a class="page-header-link" href="index.html">
+          <img class="page-header-logo" src="images/page-header-logo.svg" width="140" height="70"
+            alt="Логотип сайта о городе Седона.">
+        </a>
+        <nav class="navigation null flex">
+          <ul class="navigation-list null flex">
+            <li class="navigation-item null">
+              <a class="navigation-link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-item null">
+              <a class="navigation-link" href="#">О&nbsp;Седоне</a>
+            </li>
+            <li class="navigation-item null">
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list null navigation-user flex">
+            <li class="navigation-item null">
+              <a class="navigation-link navigation-search" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item null">
+              <a class="navigation-link navigation-favorits" href="#">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="navigation-item null">
+              <button class="page-button page-button-brown navigation-button" type="button">Хочу&nbsp;сюда</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-inner">
+        <section class="catalog wrapper-inner flex">
+          <header class="catalog-header">
+            <h1 class="catalog-title">
+              Гостиницы Седоны
+            </h1>
+            <ul class="breadcrumbs null flex">
+              <li class="breadcrumbs-item">
+                <a href="index.html" class="breadcrumbs-link">
+                  <svg class="breadcrumbs-svg" aria-hidden="true" focusable="false" width="13" height="13"
+                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                      fill="white" />
+                    <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a href="catalog.html" class="breadcrumbs-link">
+                  Гостиницы
+                </a>
+              </li>
+            </ul>
+          </header>
+          <form class="catalog-form flex" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="catalog-left flex">
+              <fieldset class="catalog-grouped null flex">
+                <legend class="catalog-legend">
+                  Инфраструктура:
+                </legend>
+                <ul class="catalog-list null">
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="pool">
+                      <span class="catalog-point catalog-mark"></span>
+                      <span class="catalog-choose">
+                        Бассейн
+                      </span>
+                    </label>
+                  </li>
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="parking">
+                      <span class="catalog-point catalog-mark"></span>
+                      <span class="catalog-choose">
+                        Парковка
+                      </span>
+                    </label>
+                  </li>
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="wi-fi">
+                      <span class="catalog-point catalog-mark"></span>
+                      <span class="catalog-choose">
+                        Wi-Fi
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-grouped null flex">
+                <legend class="catalog-legend">Тип жилья:</legend>
+                <ul class="catalog-list null">
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-radio" type="radio" name="property" id="hotel"
+                        value="hotel">
+                      <span class="catalog-point catalog-dotted"></span>
+                      <span class="catalog-choose">
+                        Гостиница
+                      </span>
+                    </label>
+                  </li>
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-radio" type="radio" name="property" id="motel"
+                        value="motel">
+                      <span class="catalog-point catalog-dotted"></span>
+                      <span class="catalog-choose">
+                        Мотель
+                      </span>
+                    </label>
+                  </li>
+                  <li class="catalog-item">
+                    <label class="catalog-label">
+                      <input class="visually-hidden catalog-radio" type="radio" name="property" id="appartaments"
+                        value="appartaments">
+                      <span class="catalog-point catalog-dotted"></span>
+                      <span class="catalog-choose">
+                        Апартаменты
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="catalog-right">
+              <fieldset class="catalog-grouped null flex">
+                <legend class="catalog-legend">
+                  Стоимость, &#8381;:
+                </legend>
+                <div class="catalog-range flex">
+                  <p class="catalog-range-fields null">
+                    <input class="catalog-range-input radius-left null" type="number" name="min-price" placeholder="от"
+                      step="500">
+                    <input class="catalog-range-input radius-right null" type="number" name="max-price" placeholder="до"
+                      step="500">
+                  </p>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span class="catalog-searching-buttons flex">
+                    <button class="page-button page-button-blue catalog-button-submit" type="submit">Применить</button>
+                    <button class="page-button catalog-button-reset" type="reset">Сбросить</button>
+                  </span>
+                </div>
+
+              </fieldset>
+            </div>
+          </form>
+        </section>
+        <section class="searching-result wrapper-inner">
+          <h2 class="visually-hidden">Все гостиницы Седоны</h2>
+          <nav class="result-navigation null flex">
+            <p class="result-navigation-count null">Найдено гостиниц: <span>38</span></p>
+            <select class="result-navigation-select field" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвое</option>
+              <option value="popular">Сначала популярное</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+            <ul class="result-navigation-list null flex">
+              <li class="result-navigation-item visual-current">
+                <a class="result-navigation-link  flex" href="#">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="" fill="#000">
+                      <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+              </li>
+              <li class="result-navigation-item">
+                <a class="result-navigation-link flex" href="#">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="" fill="#000">
+                      <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="visually-hidden">Показать слайдер</span>
+                </a>
+              </li>
+              <li class="result-navigation-item">
+                <a href="#" class="result-navigation-link flex">
+                  <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="" fill="#000">
+                      <path
+                        d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="visually-hidden">Показать список</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <article class="searching-result-area grid">
+            <div class="accommodation-card">
+              <a class="accommodation-card-link" href="#">
+                <img class="accommodation-card-image" src="images/hotel-1.jpg" width="300" height="212"
+                  alt="Вид на локацию отеля.">
+                <h3 class="accommodation-card-title">Amara Resort & Spa</h3>
+              </a>
+              <div class="hotel-rank grid">
+                <p class="accommodation-type">
+                  Гостиница
+                </p>
+                <p class="accommodation-price">
+                  От 4000 &#8381;
+                </p>
+                <button class="page-button page-button-brown accommodation-button">Подробнее</button>
+                <button class="page-button page-button-blue accommodation-button">В избранное</button>
+                <ul class="accommodation-stars null flex">
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="accommodation-rating null">
+                  Рейтинг: 8,5
+                </p>
+              </div>
+            </div>
+            <div class="accommodation-card">
+              <a class="accommodation-card-link" href="#">
+                <img class="accommodation-card-image" src="images/hotel-2.jpg" width="300" height="212"
+                  alt="Вид на локацию отеля.">
+                <h3 class="accommodation-card-title">Villas at Poco Diablo</h3>
+              </a>
+              <div class="hotel-rank grid">
+                <p class="accommodation-type">
+                  Гостиница
+                </p>
+                <p class="accommodation-price">
+                  От 5000 &#8381;
+                </p>
+                <button class="page-button page-button-brown accommodation-button">Подробнее</button>
+                <button class="page-button page-button-blue accommodation-button accommodation-button-add">В
+                  избранное</button>
+                <ul class="accommodation-stars null flex">
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li><svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="accommodation-rating null">
+                  Рейтинг: 9,2
+                </p>
+              </div>
+            </div>
+            <div class="accommodation-card">
+              <a class="accommodation-card-link" href="#">
+                <img class="accommodation-card-image" src="images/hotel-3.jpg" width="300" height="212"
+                  alt="Вид на локацию отеля.">
+                <h3 class="accommodation-card-title  null">Desert Quail Inn</h3>
+              </a>
+              <div class="hotel-rank grid">
+                <p class="accommodation-type null">
+                  Гостиница
+                </p>
+                <p class="accommodation-price null">
+                  От 2500 &#8381;
+                </p>
+                <button class="page-button page-button-brown accommodation-button">Подробнее</button>
+                <button class="page-button page-button-blue accommodation-button">В избранное</button>
+                <ul class="accommodation-stars null flex">
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="accommodation-rating null">
+                  Рейтинг: 6,9
+                </p>
+              </div>
+            </div>
+            <div class="accommodation-card">
+              <a class="accommodation-card-link" href="#">
+                <img class="accommodation-card-image" src="images/hotel-4.jpg" width="300" height="212"
+                  alt="Вид на локацию отеля.">
+                <h3 class="accommodation-card-title null">GreenTree Inn</h3>
+              </a>
+              <div class="hotel-rank grid">
+                <p class="accommodation-type null">
+                  Гостиница
+                </p>
+                <p class="accommodation-price null">
+                  От 1500 &#8381;
+                </p>
+                <button class="page-button page-button-brown accommodation-button">Подробнее</button>
+                <button class="page-button page-button-blue accommodation-button">В избранное</button>
+                <ul class="accommodation-stars null flex">
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="">
+                        <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                      </g>
+                      <defs>
+                        <clipPath>
+                          <path fill="#fff" d="M0 0h18v17H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </li>
+                </ul>
+                <p class="accommodation-rating null">
+                  Рейтинг: 5,0
+                </p>
+              </div>
+            </div>
+          </article>
+          <ul class="pagination null flex">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-link-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-link-empty">&hellip;</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </section>
+        <section class="subscribe flex">
+          <h2 class="section-title visually-hidden">
+            Подписка
+          </h2>
+          <p class="section-text subscribe-text">
+            Подпишитесь на рассылку
+          </p>
+          <p class="section-subtext subscribe-subtext">
+            Только полезная информация и никакого спама, <br> честное бойскаутское!
+          </p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="subscribe-input" type="text" placeholder="Ваш e-mail">
+            <button class="page-button page-button-blue subscribe-button" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <section class="contacts flex">
+          <h2 class="section-title visually-hidden">
+            Контакты
+          </h2>
+          <ul class="contacts-list null flex">
+            <li class="contacts-item contacts-vk">
+              <a class="contacts-link" href="https://vk.com/htmlacademy">
+                <svg class="contacts-icon" aria-hidden="true" focusable="false" width="25" height="15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z"
+                    fill="#83B3D3" />
+                </svg>
+                <span class="visually-hidden">
+                  VK
+                </span>
+              </a>
+            </li>
+            <li class="contacts-item contacts-telegram">
+              <a class="contacts-link" href="https://t.me/htmlacademy">
+                <svg class="contacts-icon" aria-hidden="true" focusable="false" width="18" height="16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"
+                    fill="#83B3D3" />
+                </svg>
+                <span class="visually-hidden">
+                  Telegram
+                </span>
+              </a>
+            </li>
+            <li class="contacts-item contacts-youtube">
+              <a class="contacts-link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="contacts-icon" aria-hidden="true" focusable="false" width="23" height="18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"
+                    fill="#83B3D3" />
+                </svg>
+                <span class="visually-hidden">
+                  Youtube
+                </span>
+              </a>
+            </li>
+          </ul>
+          <a class="contacts-phone" href="tel:+78128121212">
+            +7 (812) 812-12-12
+          </a>
+          <a class="contacts-link" href="https://www.htmlacademy.ru">
+            <svg class="contacts-logo" aria-hidden="true" focusable="false" width="115" height="34" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"
+                fill="#000" />
+            </svg>
+          </a>
+        </section>
+      </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal-window">
+          <button class="modal-close">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title section-text">Поиск гостиницы в Седоне</h2>
+          </section>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <ul class="modal-form-list null">
+              <li class="modal-form-item">
+                <p class="modal-form-field flex null">
+                  <label class="modal-form-label flex" for="modal-form-in">
+                    Дата заезда
+                  </label>
+                  <input class="modal-form-date" name="modal-form-in" id="modal-form-in" type="date">
+                </p>
+                <span class="modal-subtext modal-subtext-attention">Мы не можем отправить вас в прошлое.</span>
+              </li>
+              <li class="modal-form-item">
+                <p class="modal-form-field flex null">
+                  <label class="modal-form-label flex" for="modal-form-out">
+                    Дата заезда
+                  </label>
+                  <input class="modal-form-date" name="modal-form-out" id="modal-form-out" type="date">
+                </p>
+                <span class="modal-subtext">На эти даты есть свободные номера. Пока есть.</span>
+              </li>
+            </ul>
+            <ul class="modal-form-list null flex">
+              <li class="modal-form-item">
+                <p class="modal-form-group flex null">
+                  <label class="modal-form-label flex" for="modal-form-adults">
+                    Взрослые
+                  </label>
+                  <button class="modal-button modal-button-minus null flex">
+                    <span class="visually-hidden">Убавить количество взрослых гостей</span>
+                    <svg class="modal-count-svg" width="14" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v2h14V0H0Z" fill="#000" />
+                    </svg>
+                  </button>
+                  <input class="modal-form-count modal-form-adults" name="modal-form-adults" id="modal-form-adults"
+                    type="number" value="2">
+                  <button class="modal-button modal-button-plus null flex">
+                    <span class="visually-hidden">Добавить количество взрослых гостей</span>
+                    <svg class="modal-count-svg" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#000" />
+                    </svg>
+                  </button>
+                </p>
+              </li>
+              <li class="modal-form-item">
+                <p class="modal-form-group flex null">
+                  <span class="modal-form-label modal-label-icon flex">
+                    <label class="modal-form-label flex" for="modal-form-kids">
+                      Дети
+                    </label>
+                  </span>
+                  <span class="modal-tooltip">
+                    <button class="modal-tooltip-button" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="modal-tooltip-icon" width="26" height="26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
+                      </svg>
+                    </button>
+                    <span class="modal-tooltip-text" role="tooltip" id="tooltip-label-date">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.
+                    </span>
+                  </span>
+                  <button class="modal-button modal-button-minus null flex">
+                    <span class="visually-hidden">Убавить количество детей</span>
+                    <svg class="modal-count-svg" width="14" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v2h14V0H0Z" fill="#000" />
+                    </svg>
+                  </button>
+                  <input class="flex modal-form-count modal-form-kids" name="modal-form-kids" id="modal-form-kids"
+                    type="number" value="2">
+                  <button class="modal-button modal-button-plus null flex">
+                    <span class="visually-hidden">Добавить колчиество детей</span>
+                    <svg class="modal-count-svg" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" fill="#000" />
+                    </svg>
+                  </button>
+                </p>
+              </li>
+            </ul>
+            <button class="modal-button-find null" type="submit">Найти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
