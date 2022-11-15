@@ -1012,15 +1012,14 @@ body {
 }
 
 .pagination-link {
-  display: block;
   width: 60px;
   height: 60px;
-  padding-top: 11.36px;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
-  text-align: center;
   text-decoration: none;
   background-color: #82b3d3;
   border-radius: 4px;
@@ -1081,8 +1080,8 @@ body {
 
 .modal-close {
   position: absolute;
-  top: 90px;
-  right: 64px;
+  top: 65px;
+  right: 52px;
   width: 52px;
   height: 52px;
   justify-content: center;
@@ -1102,7 +1101,8 @@ body {
 }
 
 .modal-title {
-  margin-bottom: 64px;
+  margin-bottom: 65px;
+  line-height: 34px;
 }
 
 .modal-form-list {
@@ -1118,7 +1118,7 @@ body {
   margin-bottom: 48px;
 }
 
-.modal-form-item:not(:last-of-type) {
+.modal-first-list .modal-form-item:first-of-type  {
   margin-bottom: 23px;
 }
 
@@ -1142,6 +1142,10 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+}
+
+.modal-form-kids {
+  padding-left: 5px;
 }
 
 .modal-form-date {
@@ -1176,8 +1180,8 @@ body {
 
 .modal-date-button {
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 3px;
+  right: 6px;
   width: 46px;
   height: 46px;
   align-items: center;
@@ -1194,7 +1198,6 @@ body {
 .modal-date-button:focus {
   outline: none;
 }
-
 
 .modal-subtext {
   display: block;
@@ -1230,6 +1233,7 @@ body {
   width: 31px;
   height: 48px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 20px;
   text-align: center;
   background-color: #f2f2f2;
@@ -1261,8 +1265,8 @@ body {
 
 .modal-tooltip {
   position: absolute;
-  top: 11px;
-  left: 60px;
+  top: 12px;
+  left: 64px;
   width: 26px;
   height: 26px;
 }
@@ -1315,5 +1319,5 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
