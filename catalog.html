@@ -94,7 +94,7 @@
                 <ul class="catalog-list null">
                   <li class="catalog-item">
                     <label class="catalog-label">
-                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="pool">
+                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="pool" checked>
                       <span class="catalog-point catalog-mark"></span>
                       <span class="catalog-choose">
                         Бассейн
@@ -103,7 +103,7 @@
                   </li>
                   <li class="catalog-item">
                     <label class="catalog-label">
-                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="parking">
+                      <input class="visually-hidden catalog-checkbox" type="checkbox" name="parking" checked>
                       <span class="catalog-point catalog-mark"></span>
                       <span class="catalog-choose">
                         Парковка
@@ -128,8 +128,8 @@
                 <ul class="catalog-list null">
                   <li class="catalog-item">
                     <label class="catalog-label">
-                      <input class="visually-hidden catalog-radio" type="radio" name="property" id="hotel"
-                        value="hotel">
+                      <input class="visually-hidden catalog-radio" type="radio" name="property" id="hotel" value="hotel"
+                        checked>
                       <span class="catalog-point catalog-dotted"></span>
                       <span class="catalog-choose">
                         Гостиница
@@ -166,10 +166,16 @@
                 </legend>
                 <div class="catalog-range flex">
                   <p class="catalog-range-fields null">
-                    <input class="catalog-range-input radius-left null" type="number" name="min-price" placeholder="от"
-                      step="500">
-                    <input class="catalog-range-input radius-right null" type="number" name="max-price" placeholder="до"
-                      step="500">
+                    <label class="label-for-price min-price-position" for="min-price">
+                      от
+                    </label>
+                    <input class="catalog-range-input radius-left null" id="min-price" name="min-price" type="number"
+                      placeholder="0" step="500">
+                    <label class="label-for-price max-price-position" for="max-price">
+                      до
+                    </label>
+                    <input class="catalog-range-input radius-right null" id="max-price" name="max-price" type="number"
+                      placeholder="9000" step="500">
                   </p>
                   <div class="range">
                     <div class="range-scale">
